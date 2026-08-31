@@ -1,0 +1,37 @@
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;min-height:100vh;background:linear-gradient(180deg,#fff7fa 0%,#fff 48%,#fff7fb 100%);color:#27141d;font-family:Cairo,sans-serif}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.22;background:radial-gradient(circle at 10% 15%,#f7bfd0 0 2px,transparent 3px),radial-gradient(circle at 85% 40%,#f7bfd0 0 2px,transparent 3px);background-size:80px 80px}
+header{text-align:center;padding:52px 18px 28px;position:relative}
+.top-flower{position:absolute;top:16px;left:50%;transform:translateX(-50%);font-size:35px;color:#b33b70}
+.english{font-family:"Playfair Display",serif;font-style:italic;color:#8b244f}
+header .english{font-size:42px;font-weight:600}
+header h1{font-size:24px;margin:16px 0 8px;color:#401323}
+header p{color:#8c6c77;margin:0}
+main{max-width:760px;margin:auto;padding:12px 18px 80px}
+.progress{height:5px;background:#f3dce5;border-radius:99px;margin-bottom:25px;overflow:hidden}
+.progress span{display:block;height:100%;width:0;background:#a82d67;transition:.4s}
+.counter{text-align:right;color:#8f7780;font-size:15px;margin:0 6px 8px}
+.quiz-card{background:#fff;border-radius:28px;padding:35px 28px;box-shadow:0 15px 45px #7c33551a;border:1px solid #f0dce4}
+.quiz-card h2{font-size:27px;line-height:1.7;margin:0 0 25px}
+.answer{display:flex;align-items:center;justify-content:space-between;width:100%;padding:19px 20px;margin:12px 0;border-radius:18px;border:2px solid #eadde3;background:#fffafa;color:#26141c;font:600 17px Cairo;cursor:pointer;text-align:right;transition:.2s}
+.answer:hover{border-color:#bc4d7c;transform:translateY(-1px)}
+.radio{width:23px;height:23px;border:2px solid #777;border-radius:50%;flex:none;margin-right:12px;position:relative}
+.answer.selected{border-color:#9e2d65;background:#fff1f7}.answer.selected .radio{border-color:#9e2d65;background:#9e2d65}.answer.selected .radio:after{content:"";position:absolute;width:8px;height:8px;border-radius:50%;background:#fff;top:5px;left:5px}
+.answer.correct{background:#fff0f6;border-color:#9e2d65}.answer.wrong{opacity:.65}
+#feedback{min-height:32px;text-align:center;font-weight:700;margin-top:10px;color:#a12f66}
+.next{display:none;margin:18px auto 0;border:0;border-radius:99px;background:#a62e67;color:#fff;padding:12px 24px;font:700 15px Cairo;cursor:pointer}
+.result,.memories{display:none;max-width:900px;margin:auto;padding:55px 18px 90px;text-align:center}
+.result.show,.memories.show{display:block}
+.result-card,.letter,.video-box{background:#fff;border:1px solid #f0dce4;border-radius:30px;padding:42px 28px;box-shadow:0 18px 55px #7c33551a}
+.big-heart{font-size:55px;color:#b52e6c;animation:beat 1.2s infinite}.small{font-size:18px}
+.result h2,.memories h2{font-size:36px;margin:8px 0 18px}.result p{line-height:2;color:#745965}
+.final-line{font-size:28px;font-weight:800;color:#8e2451;margin:20px}
+.result button,.memories button{border:0;border-radius:99px;background:#a62e67;color:white;padding:14px 28px;font:700 16px Cairo;cursor:pointer}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin:28px 0}
+figure{margin:0;border-radius:22px;overflow:hidden;background:#fff;box-shadow:0 12px 35px #7c33551a}
+figure img{width:100%;height:350px;object-fit:cover;display:block}figcaption{padding:13px;font-weight:700;color:#63223d}
+.note{color:#92737f}.video-box{margin:35px 0}.video-box video{width:100%;border-radius:20px;margin-top:15px;background:#111}.letter{text-align:right;line-height:2;margin-top:35px}.letter h2{text-align:right}.letter p{color:#5e4750;font-size:16px}.signature{text-align:left!important;font-weight:800}.signature span{font-family:"Playfair Display";font-style:italic;color:#a72e68;font-size:34px}
+.hearts{position:fixed;inset:0;pointer-events:none;z-index:50}.float{position:absolute;bottom:-30px;animation:up 4s linear forwards}
+@keyframes up{to{transform:translateY(-110vh) rotate(25deg);opacity:0}}@keyframes beat{50%{transform:scale(1.12)}}
+@media(max-width:600px){header .english{font-size:34px}header h1{font-size:21px}.quiz-card{padding:28px 17px}.quiz-card h2{font-size:23px}.answer{font-size:15px;padding:17px 15px}.gallery{grid-template-columns:1fr}figure img{height:390px}.result h2,.memories h2{font-size:30px}}

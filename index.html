@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quick Quiz for Hossam ❤️</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="top-flower">✿</div>
+<header>
+  <div class="english">Quick Quiz for Hossam</div>
+  <h1>جاوب صح عشان تعرف ندى بتحبك قد إيه ❤️</h1>
+  <p>اختبار صغير مخصوص ليك يا حسام... ركّز بقى 😌</p>
+</header>
+
+<main id="quiz">
+  <div class="progress"><span id="progressBar"></span></div>
+  <div class="counter" id="counter">السؤال الأول</div>
+  <section class="quiz-card">
+    <h2 id="question"></h2>
+    <div id="answers"></div>
+    <div id="feedback"></div>
+    <button class="next" id="nextBtn" onclick="nextQuestion()">السؤال اللي بعده ➜</button>
+  </section>
+</main>
+
+<section class="result" id="result">
+  <div class="result-card">
+    <div class="big-heart">♥</div>
+    <p class="english small">You did it, Hossam!</p>
+    <h2 id="resultTitle">خلصت الاختبار 🥹❤️</h2>
+    <p id="scoreText"></p>
+    <p>بس الحقيقة إن فيه سؤال واحد ملوش اختيارات...</p>
+    <div class="final-line">هتفضل تحب ندى؟ ❤️</div>
+    <button onclick="showMemories()">طبعًا ❤️</button>
+  </div>
+</section>
+
+<section class="memories" id="memories">
+  <p class="english small">Our little memories</p>
+  <h2>وأهو الجزء اللي كنت مستنيه ❤️</h2>
+  <p class="note">كل ذكرى في الصور دي حكاية صغيرة من حكايتنا.</p>
+  <div class="gallery">
+    <figure><img src="assets/photos/photo1.jpeg"><figcaption>أحلى بداية ❤️</figcaption></figure>
+    <figure><img src="assets/photos/photo2.jpeg"><figcaption>ضحكتك المفضلة عندي 🥹</figcaption></figure>
+    <figure><img src="assets/photos/photo3.jpeg"><figcaption>كل لحظة معاك حلوة ✨</figcaption></figure>
+    <figure><img src="assets/photos/photo4.jpeg"><figcaption>أنا وإنت وبس 🫶</figcaption></figure>
+    <figure><img src="assets/photos/photo5.jpeg"><figcaption>ذكرى في قلبي 💕</figcaption></figure>
+    <figure><img src="assets/photos/photo6.jpeg"><figcaption>أحلى خروجة 🌷</figcaption></figure>
+    <figure><img src="assets/photos/photo7.jpeg"><figcaption>ربنا يديمنا لبعض 🤍</figcaption></figure>
+    <figure><img src="assets/photos/photo8.jpeg"><figcaption>لسه في ذكريات كتير جاية ❤️</figcaption></figure>
+  </div>
+
+  <div class="video-box">
+    <p class="english small">A little video for you</p>
+    <h2>فيديو صغير من نودي 🎬</h2>
+    <video controls playsinline>
+      <source src="assets/videos/hossam-video.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="letter">
+    <div class="big-heart">♥</div>
+    <p class="english small">To my favorite person</p>
+    <h2>حسام ❤️</h2>
+    <p>كل سنة وإنت طيب يا حبيبي، وكل سنة وإنت أقرب شخص لقلبي. يمكن الكلام عمره ما يكفي يوصف قد إيه وجودك في حياتي فرق معايا، بس النهارده حبيت أقولك إنك من أجمل الحاجات اللي حصلتلي.</p>
+    <p>بحب تفاصيلك، ضحكتك، طريقتك، وحتى الحاجات الصغيرة اللي يمكن إنت مش واخد بالك منها. بحب إنك بقيت جزء من أيامي ومن أحلامي ومن كل حاجة نفسي أعيشها قدام.</p>
+    <p>نفسي سنتك الجديدة تكون مليانة راحة ونجاح وفرحة، ونفضل دايمًا بنضحك سوا ونحقق كل اللي نفسنا فيه. وربنا يخليك ليا، وأنا أفضل دايمًا جنبك وفي ضهرك. 🤍</p>
+    <p class="signature">بحبك،<br><span>ندى</span> 💕</p>
+  </div>
+</section>
+
+<div class="hearts" id="hearts"></div>
+<script src="script.js"></script>
+</body>
+</html>
